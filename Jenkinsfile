@@ -22,7 +22,7 @@ pipeline {
         }
         stage("test"){
             steps {
-                reuseNode true
+                
                 sh '''
                     test -f ./build/index.html
                     npm run test
